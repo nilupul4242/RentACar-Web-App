@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSBill" targetNamespace="http://tempuri.org/DSBill.xsd" xmlns:mstns="http://tempuri.org/DSBill.xsd" xmlns="http://tempuri.org/DSBill.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="RENTCARConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="RENTCARConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.RENTCARConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Rent_A_Car_CustRegisterTableAdapter" GeneratorDataComponentClassName="Rent_A_Car_CustRegisterTableAdapter" Name="Rent_A_Car_CustRegister" UserDataComponentName="Rent_A_Car_CustRegisterTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="RENTCARConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Rent_A_Car_CustRegister.TID, Rent_A_Car_CustRegister.Cust_Name, Rent_A_Car_CustRegister.Cust_Image, Rent_A_Car_CustRegister.Cust_Address, Rent_A_Car_CustRegister.Cust_Mobile, 
+                         Rent_A_Car_CustRegister.Cust_HomeTel, Rent_A_Car_CustRegister.Cust_Email, Rent_A_Car_CustRegister.Cust_PurposeForHire, Rent_A_Car_CustRegister.Cust_NIC, 
+                         Rent_A_Car_CustRegister.Cust_PassportNo, Rent_A_Car_CustRegister.Cust_DLNo, Rent_A_Car_CustRegister.Guarant_Name, Rent_A_Car_CustRegister.Guarant_Address, 
+                         Rent_A_Car_CustRegister.Guarant_Telephone, Rent_A_Car_CustRegister.Guarant_NIC_PP_DL, Rent_A_Car_CustRegister.Card_HolderName, Rent_A_Car_CustRegister.Card_Number, 
+                         Rent_A_Car_CustRegister.Card_ExpDate, Rent_A_Car_CustRegister.Card_Bank, Rent_A_Car_CustRegister.Vehicle_Type, Rent_A_Car_CustRegister.Vehicle_RegNo, 
+                         Rent_A_Car_CustRegister.Vehicle_StartMileage, Rent_A_Car_CustRegister.Vehicle_StartFuel, Rent_A_Car_CustRegister.Vehicle_RentalPerDay, Rent_A_Car_CustRegister.Vehicle_ChargesForExtraKms, 
+                         Rent_A_Car_CustRegister.Vehicle__Remarks, Rent_A_Car_CustRegister.Vehicle_AgreementDateTime, Rent_A_Car_CustRegister.Vehicle_ValidationDates, Rent_A_Car_CustRegister.Vehicle_FreeKMs, 
+                         Rent_A_Car_CustRegister.Vehicle_SecurityDeposit, Rent_A_Car_CustRegister.Vehicle_LicenseExDate, Rent_A_Car_CustRegister.Vehicle_InsuranceExDate, Rent_A_Car_CustRegister.CreatedUserID, 
+                         Rent_A_Car_CustRegister.CreatedDateTime, Rent_A_Car_CustRegister.LastModifiedUserID, Rent_A_Car_CustRegister.LastModifiedDateTime, CaptureImages.ImageData
+FROM            Rent_A_Car_CustRegister INNER JOIN
+                         CaptureImages ON Rent_A_Car_CustRegister.TID = CaptureImages.TID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TID" DataSetColumn="TID" />
+              <Mapping SourceColumn="Cust_Name" DataSetColumn="Cust_Name" />
+              <Mapping SourceColumn="Cust_Image" DataSetColumn="Cust_Image" />
+              <Mapping SourceColumn="Cust_Address" DataSetColumn="Cust_Address" />
+              <Mapping SourceColumn="Cust_Mobile" DataSetColumn="Cust_Mobile" />
+              <Mapping SourceColumn="Cust_HomeTel" DataSetColumn="Cust_HomeTel" />
+              <Mapping SourceColumn="Cust_Email" DataSetColumn="Cust_Email" />
+              <Mapping SourceColumn="Cust_PurposeForHire" DataSetColumn="Cust_PurposeForHire" />
+              <Mapping SourceColumn="Cust_NIC" DataSetColumn="Cust_NIC" />
+              <Mapping SourceColumn="Cust_PassportNo" DataSetColumn="Cust_PassportNo" />
+              <Mapping SourceColumn="Cust_DLNo" DataSetColumn="Cust_DLNo" />
+              <Mapping SourceColumn="Guarant_Name" DataSetColumn="Guarant_Name" />
+              <Mapping SourceColumn="Guarant_Address" DataSetColumn="Guarant_Address" />
+              <Mapping SourceColumn="Guarant_Telephone" DataSetColumn="Guarant_Telephone" />
+              <Mapping SourceColumn="Guarant_NIC_PP_DL" DataSetColumn="Guarant_NIC_PP_DL" />
+              <Mapping SourceColumn="Card_HolderName" DataSetColumn="Card_HolderName" />
+              <Mapping SourceColumn="Card_Number" DataSetColumn="Card_Number" />
+              <Mapping SourceColumn="Card_ExpDate" DataSetColumn="Card_ExpDate" />
+              <Mapping SourceColumn="Card_Bank" DataSetColumn="Card_Bank" />
+              <Mapping SourceColumn="Vehicle_Type" DataSetColumn="Vehicle_Type" />
+              <Mapping SourceColumn="Vehicle_RegNo" DataSetColumn="Vehicle_RegNo" />
+              <Mapping SourceColumn="Vehicle_StartMileage" DataSetColumn="Vehicle_StartMileage" />
+              <Mapping SourceColumn="Vehicle_StartFuel" DataSetColumn="Vehicle_StartFuel" />
+              <Mapping SourceColumn="Vehicle_RentalPerDay" DataSetColumn="Vehicle_RentalPerDay" />
+              <Mapping SourceColumn="Vehicle_ChargesForExtraKms" DataSetColumn="Vehicle_ChargesForExtraKms" />
+              <Mapping SourceColumn="Vehicle__Remarks" DataSetColumn="Vehicle__Remarks" />
+              <Mapping SourceColumn="Vehicle_AgreementDateTime" DataSetColumn="Vehicle_AgreementDateTime" />
+              <Mapping SourceColumn="Vehicle_ValidationDates" DataSetColumn="Vehicle_ValidationDates" />
+              <Mapping SourceColumn="Vehicle_FreeKMs" DataSetColumn="Vehicle_FreeKMs" />
+              <Mapping SourceColumn="Vehicle_SecurityDeposit" DataSetColumn="Vehicle_SecurityDeposit" />
+              <Mapping SourceColumn="Vehicle_LicenseExDate" DataSetColumn="Vehicle_LicenseExDate" />
+              <Mapping SourceColumn="Vehicle_InsuranceExDate" DataSetColumn="Vehicle_InsuranceExDate" />
+              <Mapping SourceColumn="CreatedUserID" DataSetColumn="CreatedUserID" />
+              <Mapping SourceColumn="CreatedDateTime" DataSetColumn="CreatedDateTime" />
+              <Mapping SourceColumn="LastModifiedUserID" DataSetColumn="LastModifiedUserID" />
+              <Mapping SourceColumn="LastModifiedDateTime" DataSetColumn="LastModifiedDateTime" />
+              <Mapping SourceColumn="ImageData" DataSetColumn="ImageData" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSBill" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSBill" msprop:Generator_UserDSName="DSBill">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Rent_A_Car_CustRegister" msprop:Generator_TableClassName="Rent_A_Car_CustRegisterDataTable" msprop:Generator_TableVarName="tableRent_A_Car_CustRegister" msprop:Generator_TablePropName="Rent_A_Car_CustRegister" msprop:Generator_RowDeletingName="Rent_A_Car_CustRegisterRowDeleting" msprop:Generator_RowChangingName="Rent_A_Car_CustRegisterRowChanging" msprop:Generator_RowEvHandlerName="Rent_A_Car_CustRegisterRowChangeEventHandler" msprop:Generator_RowDeletedName="Rent_A_Car_CustRegisterRowDeleted" msprop:Generator_UserTableName="Rent_A_Car_CustRegister" msprop:Generator_RowChangedName="Rent_A_Car_CustRegisterRowChanged" msprop:Generator_RowEvArgName="Rent_A_Car_CustRegisterRowChangeEvent" msprop:Generator_RowClassName="Rent_A_Car_CustRegisterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TID" msprop:Generator_ColumnVarNameInTable="columnTID" msprop:Generator_ColumnPropNameInRow="TID" msprop:Generator_ColumnPropNameInTable="TIDColumn" msprop:Generator_UserColumnName="TID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cust_Name" msprop:Generator_ColumnVarNameInTable="columnCust_Name" msprop:Generator_ColumnPropNameInRow="Cust_Name" msprop:Generator_ColumnPropNameInTable="Cust_NameColumn" msprop:Generator_UserColumnName="Cust_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cust_Image" msprop:Generator_ColumnVarNameInTable="columnCust_Image" msprop:Generator_ColumnPropNameInRow="Cust_Image" msprop:Generator_ColumnPropNameInTable="Cust_ImageColumn" msprop:Generator_UserColumnName="Cust_Image" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Cust_Address" msprop:Generator_ColumnVarNameInTable="columnCust_Address" msprop:Generator_ColumnPropNameInRow="Cust_Address" msprop:Generator_ColumnPropNameInTable="Cust_AddressColumn" msprop:Generator_UserColumnName="Cust_Address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cust_Mobile" msprop:Generator_ColumnVarNameInTable="columnCust_Mobile" msprop:Generator_ColumnPropNameInRow="Cust_Mobile" msprop:Generator_ColumnPropNameInTable="Cust_MobileColumn" msprop:Generator_UserColumnName="Cust_Mobile">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cust_HomeTel" msprop:Generator_ColumnVarNameInTable="columnCust_HomeTel" msprop:Generator_ColumnPropNameInRow="Cust_HomeTel" msprop:Generator_ColumnPropNameInTable="Cust_HomeTelColumn" msprop:Generator_UserColumnName="Cust_HomeTel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cust_Email" msprop:Generator_ColumnVarNameInTable="columnCust_Email" msprop:Generator_ColumnPropNameInRow="Cust_Email" msprop:Generator_ColumnPropNameInTable="Cust_EmailColumn" msprop:Generator_UserColumnName="Cust_Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cust_PurposeForHire" msprop:Generator_ColumnVarNameInTable="columnCust_PurposeForHire" msprop:Generator_ColumnPropNameInRow="Cust_PurposeForHire" msprop:Generator_ColumnPropNameInTable="Cust_PurposeForHireColumn" msprop:Generator_UserColumnName="Cust_PurposeForHire">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cust_NIC" msprop:Generator_ColumnVarNameInTable="columnCust_NIC" msprop:Generator_ColumnPropNameInRow="Cust_NIC" msprop:Generator_ColumnPropNameInTable="Cust_NICColumn" msprop:Generator_UserColumnName="Cust_NIC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cust_PassportNo" msprop:Generator_ColumnVarNameInTable="columnCust_PassportNo" msprop:Generator_ColumnPropNameInRow="Cust_PassportNo" msprop:Generator_ColumnPropNameInTable="Cust_PassportNoColumn" msprop:Generator_UserColumnName="Cust_PassportNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cust_DLNo" msprop:Generator_ColumnVarNameInTable="columnCust_DLNo" msprop:Generator_ColumnPropNameInRow="Cust_DLNo" msprop:Generator_ColumnPropNameInTable="Cust_DLNoColumn" msprop:Generator_UserColumnName="Cust_DLNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Guarant_Name" msprop:Generator_ColumnVarNameInTable="columnGuarant_Name" msprop:Generator_ColumnPropNameInRow="Guarant_Name" msprop:Generator_ColumnPropNameInTable="Guarant_NameColumn" msprop:Generator_UserColumnName="Guarant_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Guarant_Address" msprop:Generator_ColumnVarNameInTable="columnGuarant_Address" msprop:Generator_ColumnPropNameInRow="Guarant_Address" msprop:Generator_ColumnPropNameInTable="Guarant_AddressColumn" msprop:Generator_UserColumnName="Guarant_Address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Guarant_Telephone" msprop:Generator_ColumnVarNameInTable="columnGuarant_Telephone" msprop:Generator_ColumnPropNameInRow="Guarant_Telephone" msprop:Generator_ColumnPropNameInTable="Guarant_TelephoneColumn" msprop:Generator_UserColumnName="Guarant_Telephone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Guarant_NIC_PP_DL" msprop:Generator_ColumnVarNameInTable="columnGuarant_NIC_PP_DL" msprop:Generator_ColumnPropNameInRow="Guarant_NIC_PP_DL" msprop:Generator_ColumnPropNameInTable="Guarant_NIC_PP_DLColumn" msprop:Generator_UserColumnName="Guarant_NIC_PP_DL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Card_HolderName" msprop:Generator_ColumnVarNameInTable="columnCard_HolderName" msprop:Generator_ColumnPropNameInRow="Card_HolderName" msprop:Generator_ColumnPropNameInTable="Card_HolderNameColumn" msprop:Generator_UserColumnName="Card_HolderName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Card_Number" msprop:Generator_ColumnVarNameInTable="columnCard_Number" msprop:Generator_ColumnPropNameInRow="Card_Number" msprop:Generator_ColumnPropNameInTable="Card_NumberColumn" msprop:Generator_UserColumnName="Card_Number" type="xs:int" minOccurs="0" />
+              <xs:element name="Card_ExpDate" msprop:Generator_ColumnVarNameInTable="columnCard_ExpDate" msprop:Generator_ColumnPropNameInRow="Card_ExpDate" msprop:Generator_ColumnPropNameInTable="Card_ExpDateColumn" msprop:Generator_UserColumnName="Card_ExpDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Card_Bank" msprop:Generator_ColumnVarNameInTable="columnCard_Bank" msprop:Generator_ColumnPropNameInRow="Card_Bank" msprop:Generator_ColumnPropNameInTable="Card_BankColumn" msprop:Generator_UserColumnName="Card_Bank" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_Type" msprop:Generator_ColumnVarNameInTable="columnVehicle_Type" msprop:Generator_ColumnPropNameInRow="Vehicle_Type" msprop:Generator_ColumnPropNameInTable="Vehicle_TypeColumn" msprop:Generator_UserColumnName="Vehicle_Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_RegNo" msprop:Generator_ColumnVarNameInTable="columnVehicle_RegNo" msprop:Generator_ColumnPropNameInRow="Vehicle_RegNo" msprop:Generator_ColumnPropNameInTable="Vehicle_RegNoColumn" msprop:Generator_UserColumnName="Vehicle_RegNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_StartMileage" msprop:Generator_ColumnVarNameInTable="columnVehicle_StartMileage" msprop:Generator_ColumnPropNameInRow="Vehicle_StartMileage" msprop:Generator_ColumnPropNameInTable="Vehicle_StartMileageColumn" msprop:Generator_UserColumnName="Vehicle_StartMileage" type="xs:double" />
+              <xs:element name="Vehicle_StartFuel" msprop:Generator_ColumnVarNameInTable="columnVehicle_StartFuel" msprop:Generator_ColumnPropNameInRow="Vehicle_StartFuel" msprop:Generator_ColumnPropNameInTable="Vehicle_StartFuelColumn" msprop:Generator_UserColumnName="Vehicle_StartFuel" type="xs:double" />
+              <xs:element name="Vehicle_RentalPerDay" msprop:Generator_ColumnVarNameInTable="columnVehicle_RentalPerDay" msprop:Generator_ColumnPropNameInRow="Vehicle_RentalPerDay" msprop:Generator_ColumnPropNameInTable="Vehicle_RentalPerDayColumn" msprop:Generator_UserColumnName="Vehicle_RentalPerDay" type="xs:double" minOccurs="0" />
+              <xs:element name="Vehicle_ChargesForExtraKms" msprop:Generator_ColumnVarNameInTable="columnVehicle_ChargesForExtraKms" msprop:Generator_ColumnPropNameInRow="Vehicle_ChargesForExtraKms" msprop:Generator_ColumnPropNameInTable="Vehicle_ChargesForExtraKmsColumn" msprop:Generator_UserColumnName="Vehicle_ChargesForExtraKms" type="xs:double" minOccurs="0" />
+              <xs:element name="Vehicle__Remarks" msprop:Generator_ColumnVarNameInTable="columnVehicle__Remarks" msprop:Generator_ColumnPropNameInRow="Vehicle__Remarks" msprop:Generator_ColumnPropNameInTable="Vehicle__RemarksColumn" msprop:Generator_UserColumnName="Vehicle__Remarks" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle_AgreementDateTime" msprop:Generator_ColumnVarNameInTable="columnVehicle_AgreementDateTime" msprop:Generator_ColumnPropNameInRow="Vehicle_AgreementDateTime" msprop:Generator_ColumnPropNameInTable="Vehicle_AgreementDateTimeColumn" msprop:Generator_UserColumnName="Vehicle_AgreementDateTime" type="xs:dateTime" />
+              <xs:element name="Vehicle_ValidationDates" msprop:Generator_ColumnVarNameInTable="columnVehicle_ValidationDates" msprop:Generator_ColumnPropNameInRow="Vehicle_ValidationDates" msprop:Generator_ColumnPropNameInTable="Vehicle_ValidationDatesColumn" msprop:Generator_UserColumnName="Vehicle_ValidationDates" type="xs:int" minOccurs="0" />
+              <xs:element name="Vehicle_FreeKMs" msprop:Generator_ColumnVarNameInTable="columnVehicle_FreeKMs" msprop:Generator_ColumnPropNameInRow="Vehicle_FreeKMs" msprop:Generator_ColumnPropNameInTable="Vehicle_FreeKMsColumn" msprop:Generator_UserColumnName="Vehicle_FreeKMs" type="xs:double" minOccurs="0" />
+              <xs:element name="Vehicle_SecurityDeposit" msprop:Generator_ColumnVarNameInTable="columnVehicle_SecurityDeposit" msprop:Generator_ColumnPropNameInRow="Vehicle_SecurityDeposit" msprop:Generator_ColumnPropNameInTable="Vehicle_SecurityDepositColumn" msprop:Generator_UserColumnName="Vehicle_SecurityDeposit" type="xs:double" minOccurs="0" />
+              <xs:element name="Vehicle_LicenseExDate" msprop:Generator_ColumnVarNameInTable="columnVehicle_LicenseExDate" msprop:Generator_ColumnPropNameInRow="Vehicle_LicenseExDate" msprop:Generator_ColumnPropNameInTable="Vehicle_LicenseExDateColumn" msprop:Generator_UserColumnName="Vehicle_LicenseExDate" type="xs:dateTime" />
+              <xs:element name="Vehicle_InsuranceExDate" msprop:Generator_ColumnVarNameInTable="columnVehicle_InsuranceExDate" msprop:Generator_ColumnPropNameInRow="Vehicle_InsuranceExDate" msprop:Generator_ColumnPropNameInTable="Vehicle_InsuranceExDateColumn" msprop:Generator_UserColumnName="Vehicle_InsuranceExDate" type="xs:dateTime" />
+              <xs:element name="CreatedUserID" msprop:Generator_ColumnVarNameInTable="columnCreatedUserID" msprop:Generator_ColumnPropNameInRow="CreatedUserID" msprop:Generator_ColumnPropNameInTable="CreatedUserIDColumn" msprop:Generator_UserColumnName="CreatedUserID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreatedDateTime" msprop:Generator_ColumnVarNameInTable="columnCreatedDateTime" msprop:Generator_ColumnPropNameInRow="CreatedDateTime" msprop:Generator_ColumnPropNameInTable="CreatedDateTimeColumn" msprop:Generator_UserColumnName="CreatedDateTime" type="xs:dateTime" />
+              <xs:element name="LastModifiedUserID" msprop:Generator_ColumnVarNameInTable="columnLastModifiedUserID" msprop:Generator_ColumnPropNameInRow="LastModifiedUserID" msprop:Generator_ColumnPropNameInTable="LastModifiedUserIDColumn" msprop:Generator_UserColumnName="LastModifiedUserID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastModifiedDateTime" msprop:Generator_ColumnVarNameInTable="columnLastModifiedDateTime" msprop:Generator_ColumnPropNameInRow="LastModifiedDateTime" msprop:Generator_ColumnPropNameInTable="LastModifiedDateTimeColumn" msprop:Generator_UserColumnName="LastModifiedDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ImageData" msprop:Generator_ColumnVarNameInTable="columnImageData" msprop:Generator_ColumnPropNameInRow="ImageData" msprop:Generator_ColumnPropNameInTable="ImageDataColumn" msprop:Generator_UserColumnName="ImageData" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Rent_A_Car_CustRegister" />
+      <xs:field xpath="mstns:TID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
